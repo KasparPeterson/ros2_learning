@@ -1,4 +1,10 @@
-## Setup
+## Development setup for Mac Host
+
+```shell
+pip install rclpy-intellisense
+```
+
+## Setup for Ubuntu
 
 ```shell
 rosdep install -r --from-paths src -i -y --rosdistro jazzy
