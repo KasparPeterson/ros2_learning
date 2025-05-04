@@ -39,3 +39,13 @@ python_parameters:
 ```shell
 ros2 run python_parameters minimal_param_node
 ```
+
+launch_tutorial:
+
+```shell
+cd src/launch_tutorial/launch
+ros2 launch turtlesim_mimic_launch.py
+
+# another terminal
+ros2 topic pub -r 1 /turtlesim3/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"
+```
